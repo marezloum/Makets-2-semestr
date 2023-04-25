@@ -597,7 +597,7 @@ ul {
   align-items: center;
 }
 .footer > .container {
-  gap: 160px;
+  padding: 0 20px;
   max-width: 1440px;
 }
 .footer .logo {
@@ -672,6 +672,11 @@ ul {
   color: #58a9a5;
 }
 
+@media (max-width: 1060px) {
+  .header .menu {
+    gap: 80px;
+  }
+}
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -687,6 +692,25 @@ ul {
   }
   .header .menu .signup__button {
     width: 120px;
+  }
+  .main .projects .projects__rows .projects__rows-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .projects .projects__rows .projects__rows-2 .proRow-item {
+    width: 60%;
+  }
+  .main .informationSubmit {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .informationSubmit .contact {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .main .informationSubmit .form {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -704,6 +728,60 @@ ul {
   }
   .header .menu .signup__button {
     width: 80px;
+  }
+  .main .introduction {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main .work .work__header p {
+    width: 800%;
+  }
+  .main .work .work__media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .work .work__media .work__image,
+  .main .work .work__media .work__text {
+    width: 100%;
+  }
+  .main .work .work__media .work__button {
+    top: calc(50% - 42px);
+    left: calc(50% - 42px);
+  }
+  .main .mission {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .mission .mission__image {
+    width: 100%;
+  }
+  .main .mission .mission__image img {
+    width: 100%;
+  }
+  .main .mission .mission__text {
+    width: 100%;
+  }
+  .main .projects .projects__rows .projects__rows-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .projects .projects__rows .projects__rows-2 .proRow-item {
+    width: 80%;
+  }
+  .main .report .workReport .workReport__media {
+    display: none;
+  }
+  .main .report .workReport .workReport__text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .main .report .workReport .workReport__text .workReportText__rows .image_cotaition {
+    padding-left: 20px;
+  }
+  .footer .menu .menu__list {
+    gap: 30px;
   }
 }
 @media (max-width: 576px) {
