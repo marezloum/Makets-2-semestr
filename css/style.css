@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 
 ul {
@@ -30,15 +31,15 @@ ul {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   border-radius: 0px;
 }
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1280px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -56,25 +57,37 @@ ul {
   display: flex;
   gap: 9px;
 }
+.header .logo > .logo__image {
+  width: 36px;
+  height: 48px;
+}
+.header .logo > .logo__image > img {
+  width: 100%;
+}
 .header .logo .logo__text {
   color: rgba(36, 132, 127, 0.631372549);
+}
+.header .logo .logo__text > span {
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 .header .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 150px;
 }
 .header .menu .signup__button {
   background: #58a9a5;
-  height: 40px;
-  width: 180px;
-  border-radius: 15px;
+  height: 50px;
+  width: 170px;
+  border-radius: 8px;
   border-color: transparent;
 }
 .header .menu .signup__button span {
   color: white;
+  font-size: 1.1rem;
 }
 .header .menu .menu__list {
   width: 100%;
@@ -94,6 +107,20 @@ ul {
   text-decoration: none;
   color: #404242;
 }
+.header .menu .menu__list .menu__list-content.selected > a {
+  color: #58a9a5;
+  font-weight: 600;
+  position: relative;
+}
+.header .menu .menu__list .menu__list-content.selected > a:after {
+  content: " ";
+  width: 32px;
+  height: 4px;
+  background-color: #fec62d;
+  position: absolute;
+  top: 24px;
+  left: 8px;
+}
 .header .menu .menu__list .menu__list-content:hover > a {
   color: #58a9a5;
 }
@@ -105,15 +132,19 @@ ul {
   flex-direction: column;
 }
 .main .introduction {
+  margin-bottom: 20px;
   width: 100%;
+  gap: 10%;
   display: flex;
   justify-content: space-between;
 }
 .main .introduction .introduction__info {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .introduction h2 .title__bold {
-  font-family: Poppins;
   font-size: 46px;
   font-weight: 800;
   line-height: 105px;
@@ -121,7 +152,6 @@ ul {
   text-align: left;
 }
 .main .introduction h2 .title__regular {
-  font-family: Poppins;
   font-size: 46px;
   font-weight: 400;
   line-height: 105px;
@@ -129,20 +159,17 @@ ul {
   text-align: left;
 }
 .main .introduction .info__text {
-  width: 351px;
-  height: 224px;
-  font-family: Poppins;
-  font-size: 16px;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
   font-weight: 400;
-  line-height: 34px;
   text-align: left;
   color: #208883;
-  margin-bottom: 80p;
 }
 .main .introduction .info__button {
   height: 53px;
   width: 180px;
-  border-radius: 20px 20px 20px 0;
+  border-radius: 12px 12px 12px 0;
   background-color: #58a9a5;
   border-color: transparent;
   color: white;
@@ -166,17 +193,24 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 40px;
 }
-.main .work p {
+.main .work .work__header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+.main .work .work__header p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1c2323;
+  width: 24%;
   margin-bottom: 20px;
 }
-.main .work h2 {
-  font-family: Poppins;
-  font-size: 46px;
+.main .work .work__header h2 {
+  font-size: 3em;
   font-weight: 800;
-  text-align: center;
   color: #1c2323;
   margin-bottom: 20px;
 }
@@ -203,19 +237,23 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.main .mission .mission__image {
+  width: 50%;
+}
 .main .mission .mission__image img {
   width: 428px;
   height: 433px;
 }
+.main .mission .mission__text {
+  width: 50%;
+}
 .main .mission .mission__text h3 {
   width: 182px;
   margin-bottom: 50px;
-  font-family: Poppins;
 }
 .main .mission .mission__text p,
 .main .mission .mission__text span {
   width: 310px;
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   text-align: left;
@@ -225,6 +263,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
   justify-content: space-between;
 }
 .main .projects span::before {
@@ -236,16 +275,26 @@ ul {
   width: 90px;
 }
 .main .projects .projects__rows .projects__rows-1 {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 .main .projects .projects__rows .projects__rows-1 h2 {
-  font-family: Poppins;
-  font-size: 46px;
+  font-size: 3em;
   font-weight: 800;
   text-align: center;
   color: #1c2323;
+  margin-bottom: 20px;
 }
 .main .projects .projects__rows .projects__rows-1 p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
   text-align: center;
 }
 .main .projects .projects__rows .projects__rows-2 {
@@ -264,7 +313,6 @@ ul {
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item1 h4 {
   color: #58a9a5;
-  font-family: Poppins;
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
@@ -272,7 +320,6 @@ ul {
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item1 p {
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
@@ -292,7 +339,6 @@ ul {
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item2 h4 {
   color: #58a9a5;
-  font-family: Poppins;
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
@@ -300,7 +346,6 @@ ul {
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item2 p {
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
@@ -320,7 +365,6 @@ ul {
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item3 h4 {
   color: #58a9a5;
-  font-family: Poppins;
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
@@ -328,7 +372,6 @@ ul {
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item3 p {
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
@@ -337,7 +380,7 @@ ul {
   margin-bottom: 5px;
   color: #486958;
 }
-.main .cowrkers {
+.main .coworkers {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -346,19 +389,18 @@ ul {
   display: flex;
   width: 100%;
 }
-.main .cowrkers .header h2 {
-  font-family: Poppins;
-  font-size: 46px;
+.main .coworkers .header h2 {
+  font-size: 3em;
   font-weight: 800;
   text-align: center;
   color: #1c2323;
 }
-.main .cowrkers .logo {
+.main .coworkers .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .cowrkers img {
+.main .coworkers img {
   width: 20%;
 }
 .main .report {
@@ -368,7 +410,11 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+.main .report .coworkers {
+  width: 100%;
+}
 .main .report .workReport {
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,37 +422,100 @@ ul {
 }
 .main .report .workReport .workReport__media {
   width: 40%;
+  height: 470px;
 }
 .main .report .workReport .workReport__media img {
   width: 100%;
 }
 .main .report .workReport .workReport__text {
+  position: relative;
+  padding: 50px 50px 100px 50px;
   width: 60%;
+  height: 470px;
   background: #ccf0e6;
+}
+.main .report .workReport .workReport__text .image_cotaition img {
+  width: 70px;
+  height: 65px;
+}
+.main .report .workReport .workReport__text .workReportText__rows {
+  position: relative;
+}
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first {
+  margin-bottom: 40px;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #58a9a5;
 }
-.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items span {
-  font-family: Poppins;
-  font-size: 46px;
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div {
+  width: 30%;
+}
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div span {
+  font-size: 3em;
   font-weight: 800;
-  line-height: 105px;
-  letter-spacing: 0em;
   text-align: left;
 }
-.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items p {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 45px;
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div p {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: left;
+}
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div .changed {
+  width: 20%;
+}
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second {
+  font-size: 1em;
+  font-weight: 500;
   letter-spacing: 0em;
   text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 205px;
+  left: 25px;
+  color: #486958;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second p {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second span {
+  font-style: italic;
+  color: #58a9a5;
+}
+
+.informationSubmit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  font-size: 2em;
+}
+.contact p {
+  width: 51%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.contact span::before {
+  content: "";
+  background: #58a9a5;
+  display: block;
+  height: 4px;
+  margin-bottom: 6px;
+  width: 90px;
 }
 
 @media (max-width: 992px) {
@@ -441,5 +550,10 @@ ul {
   }
   .header .menu .signup__button {
     width: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .container .introduction__info h2 {
+    font-size: 2em;
   }
 }

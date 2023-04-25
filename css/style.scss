@@ -23,20 +23,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 ul {
   list-style: none;
 }
 .wrapper {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   border-radius: 0px;
 }
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1280px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .header {
@@ -51,8 +52,19 @@ ul {
   .logo {
     display: flex;
     gap: 9px;
+    > .logo__image {
+      width: 36px;
+      height: 48px;
+      > img {
+        width: 100%;
+      }
+    }
     .logo__text {
       color: #24847fa1;
+      > span {
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
     }
   }
   .menu {
@@ -60,16 +72,17 @@ ul {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 150px;
 
     .signup__button {
       background: #58a9a5;
-      height: 40px;
-      width: 180px;
-      border-radius: 15px;
+      height: 50px;
+      width: 170px;
+      border-radius: 8px;
       border-color: transparent;
       span {
         color: white;
+        font-size: 1.1rem;
       }
     }
     .menu__list {
@@ -88,6 +101,22 @@ ul {
           text-decoration: none;
           color: #404242;
         }
+        &.selected {
+          > a {
+            color: #58a9a5;
+            font-weight: 600;
+            position: relative;
+            &:after {
+              content: " ";
+              width: 32px;
+              height: 4px;
+              background-color: #fec62d;
+              position: absolute;
+              top: 24px;
+              left: 8px;
+            }
+          }
+        }
         &:hover > a {
           color: #58a9a5;
         }
@@ -101,15 +130,19 @@ ul {
   align-items: center;
   flex-direction: column;
   .introduction {
+    margin-bottom: 20px;
     width: 100%;
+    gap: 10%;
     display: flex;
     justify-content: space-between;
     .introduction__info {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     h2 {
       .title__bold {
-        font-family: Poppins;
         font-size: 46px;
         font-weight: 800;
         line-height: 105px;
@@ -117,7 +150,6 @@ ul {
         text-align: left;
       }
       .title__regular {
-        font-family: Poppins;
         font-size: 46px;
         font-weight: 400;
         line-height: 105px;
@@ -126,21 +158,18 @@ ul {
       }
     }
     .info__text {
-      width: 351px;
-      height: 224px;
-      font-family: Poppins;
-      font-size: 16px;
+      width: 100%;
+      font-size: 1.6rem;
+      line-height: 2.3rem;
       font-weight: 400;
-      line-height: 34px;
       text-align: left;
       color: #208883;
-      margin-bottom: 80p;
     }
 
     .info__button {
       height: 53px;
       width: 180px;
-      border-radius: 20px 20px 20px 0;
+      border-radius: 12px 12px 12px 0;
       background-color: #58a9a5;
       border-color: transparent;
       color: white;
@@ -165,19 +194,27 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    p {
+    margin-bottom: 40px;
+    .work__header {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #1c2323;
+        width: 24%;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 3em;
+        font-weight: 800;
+        color: #1c2323;
+        margin-bottom: 20px;
+      }
     }
-    h2 {
-      font-family: Poppins;
-      font-size: 46px;
-      font-weight: 800;
-      text-align: center;
-      color: #1c2323;
-      margin-bottom: 20px;
-    }
+
     .work__media {
       width: 100%;
       display: flex;
@@ -204,21 +241,22 @@ ul {
     justify-content: space-between;
 
     .mission__image {
+      width: 50%;
       img {
         width: 428px;
         height: 433px;
       }
     }
     .mission__text {
+      width: 50%;
       h3 {
         width: 182px;
         margin-bottom: 50px;
-        font-family: Poppins;
       }
       p,
       span {
         width: 310px;
-        font-family: Poppins;
+
         font-size: 14px;
         font-weight: 500;
         text-align: left;
@@ -231,6 +269,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 70px;
     justify-content: space-between;
     span::before {
       content: "";
@@ -242,17 +281,28 @@ ul {
     }
     .projects__rows {
       .projects__rows-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
         h2 {
-          font-family: Poppins;
-          font-size: 46px;
+          font-size: 3em;
           font-weight: 800;
           text-align: center;
           color: #1c2323;
+          margin-bottom: 20px;
         }
         p {
           text-align: center;
+          margin-bottom: 20px;
+
+          font-size: 1em;
+          font-weight: 400;
+          line-height: 45px;
+          letter-spacing: 0em;
+          text-align: center;
         }
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
       .projects__rows-2 {
         gap: 70px;
@@ -269,7 +319,7 @@ ul {
           }
           h4 {
             color: #58a9a5;
-            font-family: Poppins;
+
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
@@ -277,7 +327,6 @@ ul {
             text-align: left;
           }
           p {
-            font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
             line-height: 30px;
@@ -297,7 +346,7 @@ ul {
           }
           h4 {
             color: #58a9a5;
-            font-family: Poppins;
+
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
@@ -305,7 +354,6 @@ ul {
             text-align: left;
           }
           p {
-            font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
             line-height: 30px;
@@ -325,7 +373,7 @@ ul {
           }
           h4 {
             color: #58a9a5;
-            font-family: Poppins;
+
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
@@ -333,7 +381,6 @@ ul {
             text-align: left;
           }
           p {
-            font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
             line-height: 30px;
@@ -347,7 +394,7 @@ ul {
     }
   }
 
-  .cowrkers {
+  .coworkers {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -355,8 +402,7 @@ ul {
     flex-direction: column;
     .header {
       h2 {
-        font-family: Poppins;
-        font-size: 46px;
+        font-size: 3em;
         font-weight: 800;
         text-align: center;
         color: #1c2323;
@@ -380,58 +426,122 @@ ul {
     align-items: center;
     flex-direction: column;
     .coworkers {
+      width: 100%;
       .header {
       }
     }
     .logo {
     }
     .workReport {
+      margin-bottom: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       .workReport__media {
         width: 40%;
+        height: 470px;
+
         img {
           width: 100%;
         }
       }
       .workReport__text {
+        position: relative;
+        padding: 50px 50px 100px 50px;
         width: 60%;
+        height: 470px;
         background: #ccf0e6;
+        .image_cotaition {
+          img {
+            width: 70px;
+            height: 65px;
+          }
+        }
         .workReportText__rows {
+          position: relative;
           .workReportText__row-first {
+            margin-bottom: 40px;
             .row__items {
               display: flex;
               justify-content: center;
               align-items: center;
-              span {
-                font-family: Poppins;
-                font-size: 46px;
-                font-weight: 800;
-                line-height: 105px;
-                letter-spacing: 0em;
-                text-align: left;
-              }
-              p {
-                font-family: Poppins;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 45px;
-                letter-spacing: 0em;
-                text-align: left;
+              color: #58a9a5;
+              div {
+                width: 30%;
+                span {
+                  font-size: 3em;
+                  font-weight: 800;
+                  text-align: left;
+                }
+                p {
+                  font-size: 1em;
+                  font-weight: 600;
+                  text-align: left;
+                }
+                .changed {
+                  width: 20%;
+                }
               }
             }
           }
           .workReportText__row-second {
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 0em;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+            top: 205px;
+            left: 25px;
+            color: #486958;
+
             p {
-              margin-bottom: 40px;
+              margin-bottom: 30px;
+            }
+            span {
+              font-style: italic;
+              color: #58a9a5;
             }
           }
         }
       }
     }
   }
+}
+.informationSubmit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    width: 51%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  span::before {
+    content: "";
+    background: #58a9a5;
+    display: block;
+    height: 4px;
+    margin-bottom: 6px;
+    width: 90px;
+  }
+}
+.form {
 }
 
 @media (max-width: 992px) {
@@ -476,5 +586,10 @@ ul {
 
 @media (max-width: 576px) {
   .container {
+    .introduction__info {
+      h2 {
+        font-size: 2em;
+      }
+    }
   }
 }
