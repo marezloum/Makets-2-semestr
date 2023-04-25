@@ -463,16 +463,17 @@ ul {
   width: 100%;
 }
 .main .report .workReport .workReport__media {
-  width: 40%;
+  width: 34%;
   height: 470px;
 }
 .main .report .workReport .workReport__media img {
   width: 100%;
+  height: 100%;
 }
 .main .report .workReport .workReport__text {
   position: relative;
   padding: 50px 50px 100px 50px;
-  width: 60%;
+  width: 66%;
   height: 470px;
   background: #ccf0e6;
 }
@@ -501,12 +502,9 @@ ul {
   text-align: left;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: left;
-}
-.main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div .changed {
-  width: 20%;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second {
   font-size: 1rem;
