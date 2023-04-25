@@ -16,7 +16,7 @@
 @font-face {
   font-family: Poppins;
   font-weight: 700;
-  src: url(../font/Poppins-ExtraBold.ttf);
+  src: url(../font/Poppins-Bold.ttf);
 }
 * {
   margin: 0;
@@ -148,14 +148,14 @@ ul {
   font-size: 46px;
   font-weight: 800;
   line-height: 105px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
 }
 .main .introduction h2 .title__regular {
   font-size: 46px;
   font-weight: 400;
   line-height: 105px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
 }
 .main .introduction .info__text {
@@ -210,7 +210,7 @@ ul {
   text-align: center;
 }
 .main .work .work__header h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
   color: #1c2323;
   margin-bottom: 20px;
@@ -319,7 +319,7 @@ ul {
   margin-bottom: 40px;
 }
 .main .projects .projects__rows .projects__rows-1 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
   text-align: center;
   color: #1c2323;
@@ -328,42 +328,47 @@ ul {
 .main .projects .projects__rows .projects__rows-1 p {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1em;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 45px;
-  letter-spacing: 0em;
-  text-align: center;
+  letter-spacing: 0rem;
 }
 .main .projects .projects__rows .projects__rows-2 {
   gap: 70px;
   display: flex;
   width: 100%;
 }
-.main .projects .projects__rows .projects__rows-2 .proRow-item1 {
+.main .projects .projects__rows .projects__rows-2 .proRow-item {
   width: 33.33%;
-  height: 426px;
+  height: 100%;
 }
-.main .projects .projects__rows .projects__rows-2 .proRow-item1 img {
-  width: 300px;
-  height: 300px;
-  border-radius: 0 0 255px 255px;
+.main .projects .projects__rows .projects__rows-2 .proRow-item img {
+  width: 100%;
+  height: 380px;
+  border-radius: 0 0 50% 50%;
 }
-.main .projects .projects__rows .projects__rows-2 .proRow-item1 h4 {
+.main .projects .projects__rows .projects__rows-2 .proRow-item:nth-child(2) img {
+  width: 100%;
+  height: 90%;
+  border-radius: 50%;
+}
+.main .projects .projects__rows .projects__rows-2 .proRow-item h4 {
   color: #58a9a5;
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
 }
-.main .projects .projects__rows .projects__rows-2 .proRow-item1 p {
-  font-size: 14px;
+.main .projects .projects__rows .projects__rows-2 .proRow-item p {
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
+  margin-bottom: 20px;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item2 {
   width: 33.33%;
@@ -379,14 +384,14 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item2 p {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
@@ -405,14 +410,14 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item3 p {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
@@ -427,7 +432,7 @@ ul {
   width: 100%;
 }
 .main .coworkers .header h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
   text-align: center;
   color: #1c2323;
@@ -491,12 +496,12 @@ ul {
   width: 30%;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div span {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 800;
   text-align: left;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-first .row__items div p {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
   text-align: left;
 }
@@ -504,9 +509,9 @@ ul {
   width: 20%;
 }
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
   position: absolute;
   z-index: 1;
@@ -535,15 +540,15 @@ ul {
   align-items: center;
 }
 .contact h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 .contact p {
   width: 51%;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: center;
 }
 .contact span::before {
@@ -591,6 +596,6 @@ ul {
 }
 @media (max-width: 576px) {
   .container .introduction__info h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }

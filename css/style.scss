@@ -16,7 +16,7 @@
 @font-face {
   font-family: Poppins;
   font-weight: 700;
-  src: url(../font/Poppins-ExtraBold.ttf);
+  src: url(../font/Poppins-Bold.ttf);
 }
 
 * {
@@ -146,14 +146,14 @@ ul {
         font-size: 46px;
         font-weight: 800;
         line-height: 105px;
-        letter-spacing: 0em;
+        letter-spacing: 0rem;
         text-align: left;
       }
       .title__regular {
         font-size: 46px;
         font-weight: 400;
         line-height: 105px;
-        letter-spacing: 0em;
+        letter-spacing: 0rem;
         text-align: left;
       }
     }
@@ -209,7 +209,7 @@ ul {
         text-align: center;
       }
       h2 {
-        font-size: 3em;
+        font-size: 3rem;
         font-weight: 800;
         color: #1c2323;
         margin-bottom: 20px;
@@ -322,7 +322,7 @@ ul {
         align-items: center;
         flex-direction: column;
         h2 {
-          font-size: 3em;
+          font-size: 3rem;
           font-weight: 800;
           text-align: center;
           color: #1c2323;
@@ -332,11 +332,10 @@ ul {
           text-align: center;
           margin-bottom: 20px;
 
-          font-size: 1em;
+          font-size: 1.4rem;
           font-weight: 400;
           line-height: 45px;
-          letter-spacing: 0em;
-          text-align: center;
+          letter-spacing: 0rem;
         }
         margin-bottom: 40px;
       }
@@ -345,31 +344,38 @@ ul {
         display: flex;
         width: 100%;
 
-        .proRow-item1 {
+        .proRow-item {
           width: 33.33%;
-          height: 426px;
+          height: 100%;
           img {
-            width: 300px;
-            height: 300px;
-            border-radius: 0 0 255px 255px;
+            width: 100%;
+            height: 380px;
+            border-radius: 0 0 50% 50%;
+          }
+          &:nth-child(2) {
+            img {
+              width: 100%;
+              height: 90%;
+              border-radius: 50%;
+            }
           }
           h4 {
             color: #58a9a5;
-
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
           }
           p {
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: 500;
-            line-height: 30px;
-            letter-spacing: 0em;
+            line-height: 1.5rem;
+            letter-spacing: 0rem;
             text-align: left;
             margin-bottom: 5px;
             color: #486958;
+            margin-bottom: 20px;
           }
         }
         .proRow-item2 {
@@ -386,14 +392,14 @@ ul {
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
           }
           p {
             font-size: 14px;
             font-weight: 500;
             line-height: 30px;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
             margin-bottom: 5px;
             color: #486958;
@@ -413,14 +419,14 @@ ul {
             font-size: 26px;
             font-weight: 700;
             line-height: 60px;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
           }
           p {
             font-size: 14px;
             font-weight: 500;
             line-height: 30px;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
             margin-bottom: 5px;
             color: #486958;
@@ -438,7 +444,7 @@ ul {
     flex-direction: column;
     .header {
       h2 {
-        font-size: 3em;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
         color: #1c2323;
@@ -506,12 +512,12 @@ ul {
               div {
                 width: 30%;
                 span {
-                  font-size: 3em;
+                  font-size: 3rem;
                   font-weight: 800;
                   text-align: left;
                 }
                 p {
-                  font-size: 1em;
+                  font-size: 1rem;
                   font-weight: 600;
                   text-align: left;
                 }
@@ -522,9 +528,9 @@ ul {
             }
           }
           .workReportText__row-second {
-            font-size: 1em;
+            font-size: 1rem;
             font-weight: 500;
-            letter-spacing: 0em;
+            letter-spacing: 0rem;
             text-align: left;
             position: absolute;
             z-index: 1;
@@ -556,16 +562,16 @@ ul {
   justify-content: center;
   align-items: center;
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   p {
     width: 51%;
     text-align: center;
     margin-bottom: 20px;
 
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 0em;
+    letter-spacing: 0rem;
     text-align: center;
   }
   span::before {
@@ -624,7 +630,7 @@ ul {
   .container {
     .introduction__info {
       h2 {
-        font-size: 2em;
+        font-size: 2rem;
       }
     }
   }
