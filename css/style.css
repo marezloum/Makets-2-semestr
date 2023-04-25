@@ -130,6 +130,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 .main .introduction {
   margin-bottom: 20px;
@@ -148,14 +149,12 @@ ul {
   font-size: 46px;
   font-weight: 800;
   line-height: 105px;
-  letter-spacing: 0rem;
   text-align: left;
 }
 .main .introduction h2 .title__regular {
   font-size: 46px;
   font-weight: 400;
   line-height: 105px;
-  letter-spacing: 0rem;
   text-align: left;
 }
 .main .introduction .info__text {
@@ -331,7 +330,6 @@ ul {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 45px;
-  letter-spacing: 0rem;
 }
 .main .projects .projects__rows .projects__rows-2 {
   gap: 70px;
@@ -357,14 +355,12 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0rem;
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item p {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
@@ -384,14 +380,12 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0rem;
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item2 p {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
@@ -410,14 +404,12 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 0rem;
   text-align: left;
 }
 .main .projects .projects__rows .projects__rows-2 .proRow-item3 p {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0rem;
   text-align: left;
   margin-bottom: 5px;
   color: #486958;
@@ -456,7 +448,7 @@ ul {
   width: 100%;
 }
 .main .report .workReport {
-  margin-bottom: 40px;
+  margin-bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +501,6 @@ ul {
 .main .report .workReport .workReport__text .workReportText__rows .workReportText__row-second {
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0rem;
   text-align: left;
   position: absolute;
   z-index: 1;
@@ -524,38 +515,161 @@ ul {
   font-style: italic;
   color: #58a9a5;
 }
-
-.informationSubmit {
+.main .informationSubmit {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
-.contact {
+.main .informationSubmit .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  width: 30%;
 }
-.contact h2 {
-  font-size: 2rem;
+.main .informationSubmit .contact h2 {
+  font-size: 2.7rem;
+  font-weight: 800;
 }
-.contact p {
-  width: 51%;
-  text-align: center;
+.main .informationSubmit .contact p {
   margin-bottom: 20px;
+  width: 256px;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0rem;
-  text-align: center;
 }
-.contact span::before {
+.main .informationSubmit .contact span::before {
   content: "";
   background: #58a9a5;
   display: block;
   height: 4px;
   margin-bottom: 6px;
   width: 90px;
+}
+.main .informationSubmit .form {
+  width: 70%;
+  border: 1px solid #486958;
+  padding: 50px;
+}
+.main .informationSubmit .form form {
+  display: flex;
+  flex-direction: column;
+}
+.main .informationSubmit .form form .input__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.main .informationSubmit .form form .input__wrapper:nth-child(2) {
+  margin-bottom: 80px;
+}
+.main .informationSubmit .form form .input__wrapper > label {
+  color: #486958;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.main .informationSubmit .form form .input__wrapper > input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #486958;
+}
+.main .informationSubmit .form form .send__button {
+  align-self: end;
+}
+.main .informationSubmit .form form .send__button button {
+  height: 53px;
+  width: 180px;
+  border-radius: 12px 12px 12px 0;
+  background-color: #58a9a5;
+  border-color: transparent;
+  color: white;
+}
+.main .informationSubmit .form form .send__button button > span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: #ccf0e6;
+  align-items: center;
+}
+.footer > .container {
+  gap: 160px;
+  max-width: 1440px;
+}
+.footer .logo {
+  display: flex;
+  gap: 9px;
+}
+.footer .logo > .logo__image {
+  width: 36px;
+  height: 48px;
+}
+.footer .logo > .logo__image > img {
+  width: 100%;
+}
+.footer .logo .logo__text {
+  color: rgba(36, 132, 127, 0.631372549);
+}
+.footer .logo .logo__text > span {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+.footer .menu .signup__button {
+  background: #58a9a5;
+  height: 50px;
+  width: 170px;
+  border-radius: 8px;
+  border-color: transparent;
+}
+.footer .menu .signup__button span {
+  color: white;
+  font-size: 1.1rem;
+}
+.footer .menu .menu__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+.footer .menu .menu__list .menu__list-content {
+  text-decoration: none;
+  height: 38px;
+  width: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .menu .menu__list .menu__list-content a {
+  text-decoration: none;
+  color: #404242;
+}
+.footer .menu .menu__list .menu__list-content.selected > a {
+  color: #58a9a5;
+  font-weight: 600;
+  position: relative;
+}
+.footer .menu .menu__list .menu__list-content.selected > a:after {
+  content: " ";
+  width: 32px;
+  height: 4px;
+  background-color: #fec62d;
+  position: absolute;
+  top: 24px;
+  left: 8px;
+}
+.footer .menu .menu__list .menu__list-content:hover > a {
+  color: #58a9a5;
 }
 
 @media (max-width: 992px) {
