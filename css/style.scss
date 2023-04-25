@@ -206,6 +206,7 @@ ul {
         color: #1c2323;
         width: 24%;
         margin-bottom: 20px;
+        text-align: center;
       }
       h2 {
         font-size: 3em;
@@ -218,19 +219,55 @@ ul {
     .work__media {
       width: 100%;
       display: flex;
+      position: relative;
       .work__image {
         width: 66%;
         img {
+          height: 100%;
           width: 100%;
         }
       }
       .work__text {
         width: 34%;
-        margin-bottom: 3px;
         background: #ccf0e6;
         padding: 46px 64px 59px 64px;
         color: #486958;
         font-size: 15px;
+        > p {
+          font-weight: 500;
+          margin-bottom: 30px;
+        }
+        > span {
+          font-weight: 600;
+          letter-spacing: 3px;
+        }
+      }
+      .work__button {
+        width: 84px;
+        padding: 8px;
+        height: 84px;
+        position: absolute;
+        z-index: 1;
+        top: calc(50% + 42px);
+        left: calc(66% - 42px);
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 50%;
+        > .front_circle {
+          width: 66px;
+          height: 66px;
+          background: white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > .play_button {
+            width: 0px;
+            height: 0px;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #fec62d;
+          }
+        }
       }
     }
   }

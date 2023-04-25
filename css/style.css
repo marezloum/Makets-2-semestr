@@ -207,6 +207,7 @@ ul {
   color: #1c2323;
   width: 24%;
   margin-bottom: 20px;
+  text-align: center;
 }
 .main .work .work__header h2 {
   font-size: 3em;
@@ -217,20 +218,56 @@ ul {
 .main .work .work__media {
   width: 100%;
   display: flex;
+  position: relative;
 }
 .main .work .work__media .work__image {
   width: 66%;
 }
 .main .work .work__media .work__image img {
+  height: 100%;
   width: 100%;
 }
 .main .work .work__media .work__text {
   width: 34%;
-  margin-bottom: 3px;
   background: #ccf0e6;
   padding: 46px 64px 59px 64px;
   color: #486958;
   font-size: 15px;
+}
+.main .work .work__media .work__text > p {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.main .work .work__media .work__text > span {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.main .work .work__media .work__button {
+  width: 84px;
+  padding: 8px;
+  height: 84px;
+  position: absolute;
+  z-index: 1;
+  top: calc(50% + 42px);
+  left: calc(66% - 42px);
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+}
+.main .work .work__media .work__button > .front_circle {
+  width: 66px;
+  height: 66px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .work .work__media .work__button > .front_circle > .play_button {
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fec62d;
 }
 .main .mission {
   width: 100%;
